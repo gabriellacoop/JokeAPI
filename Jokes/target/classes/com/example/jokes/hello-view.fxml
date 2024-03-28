@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="627.0" style="-fx-background-color: #4b0082;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.api.HelloController">
+    <children>
+        <Label alignment="CENTER" layoutX="0.0" layoutY="180.0" prefHeight="40.0" prefWidth="600.0" style="-fx-text-fill: white; -fx-font-size: 24px;" text="Joke List" />
+        <ListView fx:id="listView" layoutX="15.0" layoutY="117.0" prefHeight="386.0" prefWidth="600.0" />
+      <Label layoutX="245.0" layoutY="20.0" prefHeight="32.0" prefWidth="141.0" text=" Joke List" textAlignment="RIGHT" textFill="#f8f0f0">
+         <font>
+            <Font name="AppleMyungjo Regular" size="26.0" />
+         </font>
+      </Label>
+        <TextField fx:id="searchField" layoutX="15.0" layoutY="84.0" prefHeight="27.0" prefWidth="309.0" promptText="Search The Joke" style="-fx-background-color: black; -fx-text-fill: white;" />
+        <Button fx:id="Ok" layoutX="331.0" layoutY="84.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Go" textFill="WHITE" onAction="#handleSearch" />
+    </children>
+</AnchorPane>

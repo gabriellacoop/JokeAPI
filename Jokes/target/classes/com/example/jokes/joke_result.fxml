@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="393.0" prefWidth="411.0" style="-fx-background-color: #4b0082;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.api.JokeResultController">
+   <children>
+      <Label fx:id="setupLabel" layoutX="50.0" layoutY="98.0" text="Setup" textFill="#fcf8f8">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font></Label>
+      <Label fx:id="punchlineLabel" layoutX="50.0" layoutY="155.0" text="Punchline" textFill="#f5f4f4">
+         <font>
+            <Font name="Apple Chancery" size="18.0" />
+         </font></Label>
+      <Button fx:id="backButton" layoutX="158.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleCloseButtonClick" style="-fx-background-color: black;" text="Back to Jokes" textFill="#f5f3f3" />
+      <Label layoutX="157.0" layoutY="28.0" text="Here is you Joke..." textFill="#fcfafa">
+         <font>
+            <Font name="Apple Chancery" size="13.0" />
+         </font>
+      </Label>
+      <Circle fill="#e5ff1f" layoutX="206.0" layoutY="300.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="184.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  ^   ^" wrappingWidth="42.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#111010" layoutX="195.0" layoutY="325.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" wrappingWidth="23.8232421875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="laughLabel" fill="#fff7f7" layoutX="231.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HAHAHAHAHA..." />
+   </children>
+</AnchorPane>
